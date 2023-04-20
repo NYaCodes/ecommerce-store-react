@@ -22,7 +22,7 @@ return(
                                 <Button sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="mx-2">-</Button>
                 </Col>
             </Form>
-            <Button variant="danger" className="my-2">Remove from cart</Button>
+            <Button variant="danger"  onClick={() => cart.deleteFromCart(product.id)} className="my-2">Remove from cart</Button>
             </>
             :
              <Button variant="primary" onClick={() => cart.addOneToCart(product.id)}>Add to Cart</Button>
